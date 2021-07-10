@@ -1,0 +1,40 @@
+
+.container{
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.preloader{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #362222;
+    box-shadow: 0 0 10px #722121;
+    position: relative;
+    top: 0;
+    left: 0;
+    animation: preloader 2s ease-in-out .2s infinite alternate-reverse;
+    animation-play-state: running;
+}
+@keyframes preloader {
+    0%{
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+    }
+    50%{
+        top: -20px;
+        left: 30px;
+        height: 30px;
+        width: 30px;
+    }
+    100%{
+        top: 0;
+        left: 60px;
+        height: 20px;
+        width: 20px;
+    }
+}
